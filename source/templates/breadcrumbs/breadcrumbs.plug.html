@@ -1,0 +1,14 @@
+<pm:if expr="count(breadcrumbs)">
+	<nav class="breadcrumbs">
+		<ul class="breadcrumb">
+		<pm:loop name="breadcrumbs">
+			<pm:if expr="loop_index == count(breadcrumbs) - 1">
+				<li class="active">@{title}@</li>
+			</pm:if>
+			<pm:else>
+				<li><a href="@{url}@">@{title}@</a> <span class="divider">/</span></li>
+			</pm:else>
+		</pm:loop>
+		</ul>
+	</nav>
+</pm:if>

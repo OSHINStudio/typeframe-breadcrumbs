@@ -1,0 +1,5 @@
+<registry>
+	<application name="Breadcrumbs">
+		<plugin name="Breadcrumbs" class="Plugin_Breadcrumbs" />
+	</application>
+</registry>
